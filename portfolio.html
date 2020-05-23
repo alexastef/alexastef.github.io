@@ -40,40 +40,47 @@
     
 <div class="container">
 
+    <div class="row">
+      <div class="modal fade" id="linkModal" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <center><h3 class="modal-title" id="projectTitle"></h3></center>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <!-- <div class="modal-body">
+              ...
+            </div> -->
+            <div class="modal-footer">
+              <button type="button" class="btn modalLink"><a class="repoLink" href="">Repo</a></button>
+              <button type="button" class="btn modalLink"><a class="siteLink" href="">Live Site</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Row 1 with 3 columns -->
     <div class="row portfolio">
         
-      <!-- Row 1, Column 1: Fake Juice Bar Work -->
+      <!-- Row 1, Column 1: Password Generator -->
       <div class="col-sm">
-        <a href="#">
-            <img src="Images/veggiesr2.png" alt="Future Juice Bar" height="300px" class="port-image img-fluid">
-              <!-- For hover overlay -->
-              <div class="overlay">
-                <div class="text">Future Juice Bar</div>
-          </a>
-        </div>
+        <!-- <a href="#"> -->
+            <img src="Images/safe400.png" data-still="Images/safe400.png" data-hover="Images/safe-hover2.png" data-state="still" alt="Password Generator" height="300px" 
+            class="port-image img-fluid">
       </div>  
 
-      <!-- Row 1, Column 2: Tiger Page -->
+      <!-- Row 1, Column 2: That's the Spirit -->
       <div class="col-sm">
-        <a href="../tigers/">
-          <img src="Images/tigerr3.png" alt="Tiger Facts" height="300px" class="port-image img-fluid">
-            <!-- For hover overlay -->
-            <div class="overlay">
-              <div class="text">Tiger Facts</div>
-          </a>
-        </div>
+        <img src="Images/barsquare.png" data-still="Images/barsquare.png" data-hover="Images/bar-hover.png" data-state="still" alt="That's the Spirit" height="300px" 
+        class="port-image img-fluid">
       </div>
 
-      <!-- Row 1, Column 3: Fake Flower Shop Work -->
+
+      <!-- Row 1, Column 3: Weather App -->
       <div class="col-sm">
-        <a href="#">
-          <img src="Images/flowersr2.png" alt="Future Flower Shop" height="300px" class="port-image img-fluid">
-            <!-- For hover overlay-->
-            <div class="overlay">
-              <div class="text">Fake Flower Shop</div>
-          </a>
-        </div>
+        <img src="Images/weather.png" data-still="Images/weather.png" data-hover="Images/weather-hover.png" data-state="still" alt="Weather App" height="300px" class="port-image img-fluid">
       </div>
 
     </div>
@@ -82,57 +89,23 @@
     <!-- Row 2 with 3 Columns -->
     <div class="row portfolio">
 
-      <!-- Row 2, Column 1: Irene's Bar Work -->
+      <!-- Row 2, Column 1:  Day Scheduler Work -->
       <div class="col-sm">
-        <a href="#">
-          <img src="Images/irenesr403.png" alt="Goodnight Irene's Bar" height="300px" class="port-image img-fluid" >
-            <!-- For hover overlay -->
-            <div class="overlay">
-              <div class="text">Goodnight Irene's</div>
-          </a>
-        </div>
+        <img src="Images/scheduler.png" data-still="Images/scheduler.png" data-hover="Images/scheduler-hover.png" data-state="still" alt="Day Scheduler" height="300px" class="port-image img-fluid">
       </div>
 
-      <!-- Row 2, Column 2: Fake Company Work -->
+      <!-- Row 2, Column 2: NYT Search -->
       <div class="col-sm">
-        <a href="#">
-          <img src="Images/officesized403.png" alt="Guys in office" height="300px" class="port-image img-fluid">
-            <!-- For hover overlay-->
-            <div class="overlay">
-              <div class="text">Fake Company</div>
-          </a>
-        </div>
+          <img src="Images/NYT.png" data-still="Images/NYT.png" data-hover="Images/nyt-hover.png" data-state="still" alt="New York Times Search" height="300px" class="port-image img-fluid">
       </div>
 
-      <!-- Row 2, Column 3: Think Outside the Box-->
-      <div class="col-sm">
-        <a href="#">
-          <img src="Images/boxwater403.png" alt="Boxed Water" height="300px" class="port-image img-fluid">
-          <!-- For hover overlay -->
-          <div class="overlay">
-            <div class="text">Boxed Water</div>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-
-    <!-- Row 3 will have 1 blank, 1 centered, 1 blank column -->
-    <div class="row portfolio">
-
-      <!-- Row 3, Column 1: Empty -->
-      <div class="col-sm"></div>
-
-      <!-- Row 3, Column 2: More Soon! -->
+      <!-- Row 2, Column 2: More Soon! -->
       <div class="col-sm" id="comingsoon">
         <img src="Images/moresoon3400.png" alt="More soon!" height="300px" class="port-image img-fluid">
       </div>
 
-      <!-- Row 3, Column 3: Empty -->
-      <div class="col-sm"></div>
-    
     </div>
+
 
 </div>
 
@@ -140,6 +113,11 @@
 
   <!-- Footer Text, floated left -->
   <p class="footer">Alexa Stefankiewicz &#128151; 2020</p>
+
+  <!-- GitHub Bug, link in new tab to my profile / Float right -->
+  <a href="https://www.instagram.com/lex.stef/" class="social">
+    <img src="Images/github.png" alt="GitHub" height="25px">
+  </a>
 
   <!-- Instagram Bug, link in new tab to my profile / Float right -->
   <a href="https://www.instagram.com/lex.stef/" class="social"  target="_blank">
@@ -154,5 +132,9 @@
   <div style="clear: both;"></div>
 
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
