@@ -52,6 +52,11 @@ $(document).ready(function() {
             siteLink.attr("href", "https://github.com/alexastef/NYTsearch");
 
         }
+
+        if (modalTitle === "Eat-Da-Burger") {
+            repoLink.attr("href", "https://github.com/alexastef/daburger");
+            siteLink.attr("href", "https://bloc-minister-61255.herokuapp.com/");
+        }
     })
 
     });
