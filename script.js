@@ -49,7 +49,7 @@ $(document).ready(function() {
         }
         if (modalTitle === "New York Times Search") {
             repoLink.attr("href", "https://github.com/alexastef/NYTsearch");
-            siteLink.attr("href", "https://github.com/alexastef/NYTsearch");
+            siteLink.attr("href", "https://alexastef.github.io/NYTsearch");
 
         }
 

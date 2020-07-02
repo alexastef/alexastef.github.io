@@ -52,23 +52,24 @@
     <hr>
 
     <!-- Contact Form -->
-    <form>
+    <form id="email-form" action="https://formspree.io/xknqqwdl" method="POST">
         <div class="form-group">
-          <label for="exampleFormControlInput1">Name</label>
-          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+          <label for="form-name">Name</label>
+          <input type="text" name="name" class="form-control" id="form-name"  placeholder="Your Name">
         </div>
         <div class="form-group">
-            <label for="exampleFormControlInput2">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="email@you.com">
+            <label for="form-email">Email</label>
+            <input type="email" name="replayEmail" class="form-control" id="form-email" placeholder="email@you.com">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="message">Message</label>
+          <textarea class="form-control" name="messageBody" id="form-body" rows="3"></textarea>
         </div>
       </form>
     
     <!-- Submit Button with Thanks alert -->
-    <center><button type="button" class="btn btn-secondary btn-sm" id="submit" onclick="alert('Thanks! Talk soon :)')">SUBMIT</button></center>
+    <center><button type="submit" class="btn btn-secondary btn-sm" id="submit">SUBMIT</button></center>
+    <p id="form-status"></p>
 
 
 
@@ -99,5 +100,6 @@
 
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="contact-script.js"></script>
 </body>
 </html>
