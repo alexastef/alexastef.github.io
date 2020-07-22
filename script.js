@@ -57,6 +57,11 @@ $(document).ready(function() {
             repoLink.attr("href", "https://github.com/alexastef/daburger");
             siteLink.attr("href", "https://bloc-minister-61255.herokuapp.com/");
         }
+
+        if (modalTitle === "Lookin for a Loo!") {
+            repoLink.attr("href", "https://github.com/alexastef/loo");
+            siteLink.attr("href", "https://skip-to-the-loo.herokuapp.com/");
+        }
     })
 
     });
