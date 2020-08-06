@@ -64,7 +64,7 @@ $(document).ready(function() {
         }
 
         if (modalTitle === "COVID Can I Do It?") {
-            repoLink.attr("href", "https://github.com/alexastef/loo");
+            repoLink.attr("href", "https://github.com/covidcanidoit/covidcanidoit");
             siteLink.attr("href", "https://covidcanidoit.com");
         }
     })
