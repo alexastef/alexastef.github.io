@@ -62,6 +62,11 @@ $(document).ready(function() {
             repoLink.attr("href", "https://github.com/alexastef/loo");
             siteLink.attr("href", "https://skip-to-the-loo.herokuapp.com/");
         }
+
+        if (modalTitle === "COVID Can I Do It?") {
+            repoLink.attr("href", "https://github.com/alexastef/loo");
+            siteLink.attr("href", "https://covidcanidoit.com");
+        }
     })
 
     });
